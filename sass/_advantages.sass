@@ -1,0 +1,62 @@
+.advantages
+  padding-top: 90rem
+  padding-bottom: 136rem
+  color: #333439
+  &-container
+    position: relative
+
+  .section-title
+    margin-bottom: 80rem
+    &::after
+      width: 423rem
+
+  .text
+    width: 812rem
+    font-size: 23rem
+    font-weight: 400
+    line-height: 34rem
+    margin-bottom: 97rem
+    p
+      margin-bottom: 45rem
+    &:last-child
+      margin-bottom: 0
+
+.adv
+  counter-reset: myCounter
+  padding: 0
+  position: absolute
+  width: 412rem
+  height: 100%
+  right: -137rem
+  li
+    list-style: none
+    font-size: 25rem
+    font-weight: 700
+    line-height: 27rem
+    position: relative
+    &:before
+      position: absolute
+      counter-increment: myCounter
+      content: counter(myCounter)
+      //width: 125rem
+      //height: 200rem
+      bottom: 60rem
+      color: #e53200
+      font-family: "Russo One"
+      font-size: 270rem
+      font-weight: 400
+      line-height: 27rem
+      z-index: -1
+  &-1
+    margin-top: 74rem
+    margin-bottom: 159rem
+    &::before
+      left: -63rem
+  &-2
+    margin-bottom: 180rem
+    margin-left: 150rem
+    &::before
+      left: -109rem
+  &-3
+    &::before
+      left: -111rem

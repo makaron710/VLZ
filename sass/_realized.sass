@@ -1,0 +1,53 @@
+.realized
+  padding-top: 150rem
+  padding-bottom: 150rem
+  background: #e8e8e8
+
+  .section-title
+    color: #000
+    margin-bottom: 170rem
+    display: inline-block
+    &::after
+      width: 106%
+
+  .content
+    margin-bottom: 93rem
+
+.realized__pr
+  width: 428rem
+  height: 288rem
+  background: #d1d1d1
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  transition: all 0.3s
+  &:hover
+    box-shadow: inset 0px 0px 3px 0px rgba(229, 50, 0, 0.75)
+  &::before
+    position: absolute
+    content: ''
+    width: 100rem
+    height: 100rem
+    top: calc( 50% - 50rem )
+    left: calc( 50% - 50rem )
+    border-radius: 50%
+    background: #e53200 url('../img/click.svg') no-repeat center center / 80%
+    opacity: 0
+    transition: all 0.3s
+  &:hover::before
+    opacity: 0.8
+  
+
+  img
+    max-height: 70%
+
+@supports (display: grid) 
+  .realized .content 
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    //grid-template-rows: 1fr 1fr 1fr
+    //grid-template-areas: ". . ." ". . ." ". . ."
+    gap: 32rem 40rem
+    
